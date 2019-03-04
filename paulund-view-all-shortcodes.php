@@ -3,7 +3,7 @@
 Plugin Name: Paulund View All Shortcodes
 Plugin URI: http://www.paulund.co.uk
 Description: View all the available shortcodes on your Wordpress blog. This page will show you everything that is currently registered so you can use these in the text editor of Wordpress
-Version: 1
+Version: 1.0.1
 Author: Paul Underwood
 Author URI: http://www.paulund.co.uk
 */
@@ -86,7 +86,7 @@ class View_All_Available_Shortcodes
 	        foreach($shortcode_tags as $code => $function)
 	        {
 	        	?>
-	        		<tr><td>[<?php echo $code; ?>]</td></tr>
+			<tr><td><pre>[<?php echo var_dump($code); ?>]</pre></td></tr>
 	        	<?php
 	        }
 	    ?>
